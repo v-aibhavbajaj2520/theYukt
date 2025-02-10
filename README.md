@@ -20,12 +20,15 @@ Cloud Services: AWS, Firebase (Planned)
 
 ## Prerequisites
 Ensure you have the following installed:
+
 Node.js (Latest LTS version)
+
 npm or yarn
 
-Installation
-# Clone the repository
+# Installation
+Clone the repository
 git clone https://github.com/v-aibhavbajaj2520/theYukt.git
+
 cd theYukt
 
 # Install dependencies
