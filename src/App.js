@@ -1,20 +1,20 @@
 import React, { useState, useEffect } from "react";
-import "./App.css";
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+import ".//App.css";
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin  } from "react-icons/fa";
 import EventContainer from "./components/EventContainer";
 import StatsSection from "./components/StatsSection";
 import { EVENTS, SPONSOR } from "./config/constants";
 import menuIcon from "./assets/menu.png";
 import closeIcon from "./assets/close.png";
 import Sponsor from "./components/Sponsor";
+import { BsFillTelephoneFill } from "react-icons/bs";
+import { MdMailOutline } from "react-icons/md";
+import { FaLocationDot } from "react-icons/fa6";
+
+
+
 
 function App() {
-  const [countdown, setCountdown] = useState({
-    days: "00",
-    hours: "00",
-    minutes: "00",
-    seconds: "00",
-  });
 
   const [isNavOpen, setIsNavOpen] = useState(false);
 
@@ -97,50 +97,57 @@ function App() {
           <h1>What Sets Us Apart</h1>
           <div className="timeline">
             <div className="timeline-item">
-              <div className="timeline-date">28 February 2025</div>
+            <div className="timeline-marker"></div>
               <div className="timeline-content">
-                <h3 className="right-timeline">Track Release</h3>
+                <h3 className="right-timeline">One-Stop Solution</h3>
                 <p className="right-timeline">
-                  Get ready to innovate! On January 1, we’ll unveil the
-                  hackathon tracks, each designed to spark creativity and tackle
-                  real-world challenges. Gear up to choose your path and make a
-                  difference!
+                No need to hire multiple freelancers. We handle web & app development, UI/UX design, and video editing all in one place!
                 </p>
               </div>
             </div>
             <div className="timeline-item">
-              <div className="timeline-date">1 March 2025</div>
+              <div className="timeline-marker"></div>
+
               <div className="timeline-content">
-                <h3 className="left-timeline">Rolling Acceptance Idea Submission</h3>
+                <h3 className="left-timeline">Expert Team, Hassle-Free Execution</h3>
                 <p className="left-timeline">
-                  Submit your innovative ideas early, as we have limited seats!
-                  We’re reviewing submissions as they come in, and you’ll be
-                  notified about your selection status within 36 hours. Don’t
-                  miss this opportunity!
+                We carefully handpick skilled developers, designers, and editors to ensure high-quality results while you focus on your business.
                 </p>
               </div>
             </div>
             <div className="timeline-item">
-              <div className="timeline-date">28 February 2025</div>
+              <div className="timeline-marker"></div>
               <div className="timeline-content">
-                <h3 className="right-timeline">Track Release</h3>
+                <h3 className="right-timeline">Cost-Effective & Flexible Pricing</h3>
                 <p className="right-timeline">
-                  Get ready to innovate! On January 1, we’ll unveil the
-                  hackathon tracks, each designed to spark creativity and tackle
-                  real-world challenges. Gear up to choose your path and make a
-                  difference!
+                Affordable packages with customized pricing based on your project needs whether a startup or an enterprise.
                 </p>
               </div>
             </div>
             <div className="timeline-item">
-              <div className="timeline-date">1 March 2025</div>
+              <div className="timeline-marker"></div>
               <div className="timeline-content">
-                <h3 className="left-timeline">Rolling Acceptance Idea Submission</h3>
+                <h3 className="left-timeline">On-Time Project Delivery</h3>
                 <p className="left-timeline">
-                  Submit your innovative ideas early, as we have limited seats!
-                  We’re reviewing submissions as they come in, and you’ll be
-                  notified about your selection status within 36 hours. Don’t
-                  miss this opportunity!
+                Strict timelines and structured workflow to ensure your project is delivered on time, every time!
+                </p>
+              </div>
+            </div>
+            <div className="timeline-item">
+              <div className="timeline-marker"></div>
+              <div className="timeline-content">
+                <h3 className="left-timeline">Seamless Communication & Support</h3>
+                <p className="left-timeline">
+                Get regular updates and direct communication with a dedicated project manager for a smooth experience
+                </p>
+              </div>
+            </div>
+            <div className="timeline-item">
+              <div className="timeline-marker"></div>
+              <div className="timeline-content">
+                <h3 className="left-timeline">Scalable & Future-Proof Solutions</h3>
+                <p className="left-timeline">
+                We build modern, scalable solution tech limitations. your business can grow without tech limitations.
                 </p>
               </div>
             </div>
@@ -148,24 +155,28 @@ function App() {
         </div> 
         <div className="contact-container">
           <div className="b-card">
-            <div className="input-det">
-              <label>First Name</label>
-              <input type="text"></input>
+            <div className="upper-inp" id="upper-1">
+              <div className="input-det">
+                <label>First Name</label>
+                <input type="text"></input>
+              </div>
+
+              <div className="input-det">
+                <label>Last Name</label>
+                <input type="text"></input>
+              </div>
             </div>
 
-            <div className="input-det">
-              <label>Last Name</label>
-              <input type="text"></input>
-            </div>
+            <div className="upper-inp" id="upper-2">
+              <div className="input-det">
+                <label>Email</label>
+                <input type="text"></input>
+              </div>
 
-            <div className="input-det">
-              <label>Email</label>
-              <input type="text"></input>
-            </div>
-
-            <div className="input-det">
-              <label>Phone Number</label>
-              <input type="text"></input>
+              <div className="input-det">
+                <label>Phone Number</label>
+                <input type="text"></input>
+              </div>
             </div>
 
             <div className="text-det">
@@ -178,17 +189,31 @@ function App() {
             </div>
           </div>
           <div className="s-card">
-            <h2>Contact Information</h2>
-            <h3>Say something to start a chat</h3>
-            <img src="aa"></img><h4>+91 8486964047</h4>
-            <img src="aa"></img><h4>info.vbajaj@gmail.com</h4>
-            <img src="aa"></img><h4>Delhi</h4>
+            <div className="in-s-card">
+              <h2>Contact Information</h2>
+              <h3>Say something to start a chat</h3>
+              
+              <div className="contact-info">
+                <div className="type-fills">
+                <BsFillTelephoneFill /><h4>+91 8486964047</h4>
+                </div>
+                <div className="type-fills">
+                <MdMailOutline /><h4>info.vbajaj@gmail.com</h4>
+                </div>
+                <div className="type-fills">
+                <FaLocationDot /><h4>Uttar Pradesh</h4>
+                </div>
+                
+                
+                </div>
 
-            <img src="aa"></img>
-            <img src="aa"></img>
-            <img src="aa"></img>
+                <div className="social-links">
+                <a href=""><FaTwitter/></a>  
+                <a href="https://www.instagram.com/"><FaInstagram/></a>  
+                <a href="https://www.linkedin.com/company/the-yukt/"><FaLinkedin/></a>  
+                </div>
               </div>
-          
+            </div>
         </div>
       
       <hr className="hori-line"></hr>
