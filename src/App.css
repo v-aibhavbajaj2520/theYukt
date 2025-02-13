@@ -181,16 +181,17 @@ h1 {
 
 .expertise{
   margin-top: 10%;
-  height: 45vh;
+  height: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
+
 .circles{
-  height: 38%;
-  width: 90%;
-  border-radius: 50%;
+  height: 75%;
+  width: 55%;
+  border-radius: 60%;
   background-color: aliceblue;
   color: black;
   display: flex;
@@ -202,9 +203,13 @@ h1 {
   /* display: flex;
   justify-content: center;
   align-items: center; */
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
+/* Project Section */
+.projects-section{
+  margin-top: 5%;
+}
 
 /* Timeline container */
 .timeline {

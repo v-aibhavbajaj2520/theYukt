@@ -10,6 +10,8 @@ import Sponsor from "./components/Sponsor";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { MdMailOutline } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
+// import Glassmorphism from "./components/Glassmorphism";
+import FloatingProjects from "./components/FloatingProjects";
 
 
 
@@ -33,8 +35,8 @@ function App() {
         <div className={`nav-links ${isNavOpen ? "active" : ""}`}>
           <a href="#team">Home</a>
           <a href="#themes">About Us</a>
-          <a href="#sponsor">Service</a>
-          <a href="#about">Careers</a>
+          <a href="#about">Services</a>
+          <a href="#sponsor">Projects</a>
         </div>
         <div>
           <button className="register-btn">Get a Free Quote</button>
@@ -66,9 +68,9 @@ function App() {
         </section>
       </div>
 
-      <div className="expertise">
+      
+        <section className="expertis">
         <h1 className="expertise-title">Our Expertise</h1>
-        <section>
           <div className="expertise">
             <div className="expertise-content">
               <div className="mid-logo">
@@ -92,7 +94,12 @@ function App() {
             
           </div>
         </section>
-      </div>
+      
+
+      <section className="projects-section">
+        <FloatingProjects/>
+      </section>
+
       <div className="timeline-section">
           <h1>What Sets Us Apart</h1>
           <div className="timeline">
@@ -153,6 +160,8 @@ function App() {
             </div>
           </div>
         </div> 
+
+        {/* Contact Us */}
         <div className="contact-container">
           <div className="b-card">
             <div className="upper-inp" id="upper-1">
