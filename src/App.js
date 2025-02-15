@@ -74,15 +74,16 @@ function App() {
         <h1 className="expertise-title">Our Expertise</h1>
           <div className="expertise">
             <div className="expertise-content">
-              <div className="mid-logo">
-                <img src="logo.jpeg"></img>
-              </div>
+              
 
                 <div className="circles circle-1">
                   <h3>UI/UX<br/>Designing</h3>
                 </div>
                 <div className="circles circle-2">
                   <h3>Web<br/>Development</h3>
+                </div>
+                <div className="mid-logo">
+                  <img src="logo.jpeg"></img>
                 </div>
                 <div className="circles circle-3">
                   <h3>App <br/>Development</h3>
