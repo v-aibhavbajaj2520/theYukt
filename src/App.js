@@ -65,7 +65,7 @@ function App() {
         <section className="about-content">
         <p>Yukt delivers web & app development,<br/> UI/UX design, video editing, and<br/> software solutions with innovation and<br/> precision.<br/>
         “Your Vision, Our Team"</p>
-        <iframe src="youtube.com"></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/BlGRFNU2_KA?si=kgl6elGuHiXwyTDh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
       </div>
 
