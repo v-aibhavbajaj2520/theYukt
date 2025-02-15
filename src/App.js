@@ -11,8 +11,9 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 import { MdMailOutline } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 // import Glassmorphism from "./components/Glassmorphism";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import FloatingProjects from "./components/FloatingProjects";
-
+import ProjectsPage from "./components/ProjectsPage";
 
 
 
@@ -69,7 +70,7 @@ function App() {
       </div>
 
       
-        <section className="expertis">
+        <section className="expertise">
         <h1 className="expertise-title">Our Expertise</h1>
           <div className="expertise">
             <div className="expertise-content">
@@ -97,7 +98,12 @@ function App() {
       
 
       <section className="projects-section">
-        <FloatingProjects/>
+      <Router>
+      <Routes>
+        <Route path="/" element={<FloatingProjects />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+      </Routes>
+    </Router>
       </section>
 
       <div className="timeline-section">
