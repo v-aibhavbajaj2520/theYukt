@@ -1,10 +1,12 @@
 import React, { useState, useRef } from "react";
 import "./FloatingProjects.css";
+import SkyGenTech from "../assets/SkyGenTech.png";
+import Mosaic from "../assets/Mosaic.png";
 
 const projects = [
-  { title: "AI Resume Analyzer", description: "AI-powered resume insights.", img: "https://via.placeholder.com/300" },
-  { title: "Queue Tracker", description: "Real-time cloud queue management.", img: "https://via.placeholder.com/300" },
-  { title: "Cyber Security Dashboard", description: "Live security threat monitoring.", img: "https://via.placeholder.com/300" },
+  { title: "Sky Gen Tech", description: "Created a Full Stack responsive website.", img: SkyGenTech },
+  { title: "Mosaic IILM", description: "It is the Culture fest of IILM, We made website for that", img: Mosaic },
+  { title: "GDG IILM Website", description: "Created Website for GDG IILM.", img: "https://via.placeholder.com/300" },
 ];
 
 const FloatingProjects = () => {
@@ -18,20 +20,20 @@ const FloatingProjects = () => {
     
     const allProjects = [
       { 
-        title: "AI Resume Analyzer", 
-        description: "AI-powered resume insights.", 
-        img: "https://via.placeholder.com/300",
+        title: "Sky Gen Tech", 
+        description: "Created a Full Stack responsive website.", 
+        img: SkyGenTech,
         type: "ai"
       },
       { 
-        title: "Queue Tracker", 
-        description: "Real-time cloud queue management.", 
-        img: "https://via.placeholder.com/300",
+        title: "Mosaic IILM", 
+        description: "It is the Culture fest of IILM, We made website for that", 
+        img: Mosaic,
         type: "web"
       },
       { 
-        title: "Cyber Security Dashboard", 
-        description: "Live security threat monitoring.", 
+        title: "GDG IILM Website", 
+        description: "Created Website for GDG IILM.", 
         img: "https://via.placeholder.com/300", 
         type: "security"
       },
@@ -54,7 +56,7 @@ const FloatingProjects = () => {
       : allProjects.filter(project => project.type === filter);
 
     return (
-      <div className="container">
+      <div className="container-1">
         <h1 className="title">All Projects</h1>
         
         <div style={{marginBottom: "30px"}}>
@@ -126,7 +128,7 @@ const FloatingProjects = () => {
   };
 
   return (
-    <div className="container">
+    <div className="container-1">
       <h1 className="title">Our Projects</h1>
       <div className="projects-grid">
         {projects.map((project, index) => (
