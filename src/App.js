@@ -16,7 +16,6 @@ import FloatingProjects from "./components/FloatingProjects";
 import ProjectsPage from "./components/ProjectsPage";
 
 
-
 function App() {
 
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -171,43 +170,43 @@ function App() {
         {/* Contact Us */}
         <div className="contact-container">
           <div className="b-card">
-            <form action="/submit" method="POST">
+            <form action="/submit" onSubmit={onSubmit} method="POST">
 
-            </form>
             <div className="upper-inp" id="upper-1">
               <div className="input-det">
                 <label>First Name</label>
-                <input type="text"></input>
+                <input type="text" required></input>
               </div>
 
               <div className="input-det">
                 <label>Last Name</label>
-                <input type="text"></input>
+                <input type="text" required></input>
               </div>
             </div>
 
             <div className="upper-inp" id="upper-2">
               <div className="input-det">
                 <label>Email</label>
-                <input type="text"></input>
+                <input type="text" required></input>
               </div>
 
               <div className="input-det">
                 <label>Phone Number</label>
-                <input type="text"></input>
+                <input type="text" required></input>
               </div>
             </div>
 
             <div id="upper-3">
             <div className="text-det">
               <label>Write your message</label>
-              <textarea type="text" rows={'4'}></textarea>
+              <textarea type="text" rows={'4'} required></textarea>
             </div>
             </div>
 
             <div className="send-message">
             <button type="submit">Send Message</button>
             </div>
+            </form>
           </div>
           <div className="s-card">
             <div className="in-s-card">
