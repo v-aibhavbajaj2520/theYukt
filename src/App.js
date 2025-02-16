@@ -77,10 +77,10 @@ function App() {
               
 
                 <div className="circles circle-1">
-                  <h3>UI/UX<br/>Designing</h3>
+                  <h3>Web<br/>Development</h3>
                 </div>
                 <div className="circles circle-2">
-                  <h3>Web<br/>Development</h3>
+                  <h3>UI/UX<br/>Designing</h3>
                 </div>
                 <div className="mid-logo">
                   <img src="logo.jpeg"></img>

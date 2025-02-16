@@ -48,7 +48,7 @@ const FloatingProjects = () => {
         description: "Intelligent customer support bot",
         img: "https://via.placeholder.com/300",
         type: "ai"  
-      }
+      } 
     ];
 
     const filteredProjects = filter === 'all' 
