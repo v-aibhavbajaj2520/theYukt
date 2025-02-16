@@ -171,6 +171,9 @@ function App() {
         {/* Contact Us */}
         <div className="contact-container">
           <div className="b-card">
+            <form action="/submit" method="POST">
+
+            </form>
             <div className="upper-inp" id="upper-1">
               <div className="input-det">
                 <label>First Name</label>
@@ -195,9 +198,11 @@ function App() {
               </div>
             </div>
 
+            <div id="upper-3">
             <div className="text-det">
               <label>Write your message</label>
-              <textarea type="text"></textarea>
+              <textarea type="text" rows={'4'}></textarea>
+            </div>
             </div>
 
             <div className="send-message">
