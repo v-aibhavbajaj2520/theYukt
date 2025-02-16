@@ -132,9 +132,9 @@ const FloatingProjects = () => {
       <h1 className="title">Our Projects</h1>
       <div className="projects-grid">
         {projects.map((project, index) => (
-          <ProjectCard key={index} project={project} />
+          <ProjectCard key={index} project={project} /> 
         ))}
-      </div>
+      </div>  
       <button 
         onClick={handleViewAll}
         style={{
@@ -164,8 +164,8 @@ const ProjectCard = ({ project }) => {
 
   const handleMouseMove = (e) => {
     const rect = cardRef.current.getBoundingClientRect();
-    const x = ((e.clientX - rect.left) / rect.width - 0.5) * 20; // Increased tilt intensity
-    const y = ((e.clientY - rect.top) / rect.height - 0.5) * 20;
+    const x = ((e.clientX - rect.left) / rect.width - 0.5) * 30; // Increased tilt intensity
+    const y = ((e.clientY - rect.top) / rect.height - 0.5) * 30;
 
     setTilt({ x, y, scale: 1.1 }); // Instant effect, no smoothing
   };
