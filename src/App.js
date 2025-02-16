@@ -170,7 +170,7 @@ function App() {
         {/* Contact Us */}
         <div className="contact-container">
           <div className="b-card">
-            <form action="/submit" onSubmit={onSubmit} method="POST">
+            <form action="/submit" method="POST">
 
             <div className="upper-inp" id="upper-1">
               <div className="input-det">
@@ -223,8 +223,6 @@ function App() {
                 <div className="type-fills">
                 <FaLocationDot /><h4>Uttar Pradesh</h4>
                 </div>
-                
-                
                 </div>
 
                 <div className="social-links">
@@ -240,23 +238,29 @@ function App() {
       <footer>
         <div className="left-side">
         <h3>Reach Us</h3>
-        <img src="aa"></img><h4>+91 8486964047</h4>
-            <img src="aa"></img><h4>info.vbajaj@gmail.com</h4>
-            <img src="aa"></img><h4>Delhi</h4>
+                <div className="type-fills">
+                <BsFillTelephoneFill /><h4>+91 8486964047</h4>
+                </div>
+                <div className="type-fills">
+                <MdMailOutline /> <h4>info.vbajaj@gmail.com</h4>
+                </div>
+                <div className="type-fills">
+                <FaLocationDot /><h4>Uttar Pradesh</h4>
+                </div>
         </div>
 
         <div className="mid-side">
         <h3>Company</h3>
-          <h4>About</h4>
-          <h4>Contact Us</h4>
-          <h4>Careers</h4>
+          <h5>About</h5>
+          <h5>Contact Us</h5>
+          <h5>Careers</h5>
         </div>
 
         <div className="right-side">
         <h3>Quick Links</h3>
-          <a><h4>InstaGram</h4></a>
-          <a><h4>Linkedin</h4></a>
-          <a><h4>Twitter</h4></a>
+        <a href="https://www.instagram.com/theyukt/"><FaInstagram/>Instagram</a>
+          <a href="https://www.linkedin.com/company/the-yukt/"><FaLinkedin/> Linkedin</a>  
+          <a><h5>Twitter</h5></a>
         </div>
         
       </footer>
