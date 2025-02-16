@@ -1,4 +1,4 @@
-.projects-grid {
+  .projects-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(200px, 1fr));
     gap: 60px; 
@@ -28,3 +28,9 @@
     background-color: rgba(255, 255, 255, 0.2);
   }
   
+
+  @media (max-width: 480px) {
+    .projects-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
