@@ -42,14 +42,15 @@ html {
 
 .navbar {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   padding: 20px 0;
   position: relative;
 }
 
-.logo {
-  height: 40px;
+.logo img{
+  height: 50px;
+  width: 60px;
   font-size: 5px;
 }
 

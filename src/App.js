@@ -31,7 +31,7 @@ function App() {
       {/* Navbar */}
       <nav className="navbar">
         <div className="logo">
-          <img src=''/>
+          <img src='logo.jpeg'/>
         </div>
         <div className={`nav-links ${isNavOpen ? "active" : ""}`}>
           <a href="#team">Home</a>
