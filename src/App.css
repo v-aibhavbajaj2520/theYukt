@@ -591,3 +591,28 @@ h5{
   flex-direction: column;
   align-items: center;
 }
+
+.send-message{
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
+}
+
+/* .send-message:hover{
+  background-color: white;
+  color: black;
+} */
+
+.send-message button{
+  background-color: transparent;
+  color: white;
+}
