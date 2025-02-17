@@ -14,6 +14,7 @@ import { FaLocationDot, FaXTwitter  } from "react-icons/fa6";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import FloatingProjects from "./components/FloatingProjects";
 import ProjectsPage from "./components/ProjectsPage";
+import onSubmit from "./components/Contact";
 
 
 function App() {
@@ -170,7 +171,7 @@ function App() {
         {/* Contact Us */}
         <div className="contact-container">
           <div className="b-card">
-            <form action="/submit" method="POST">
+            <form onSubmit={onSubmit}>
 
             <div className="upper-inp" id="upper-1">
               <div className="input-det">
