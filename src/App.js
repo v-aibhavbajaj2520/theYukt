@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ".//App.css";
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin  } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin  } from "react-icons/fa";
 import EventContainer from "./components/EventContainer";
 import StatsSection from "./components/StatsSection";
 import { EVENTS, SPONSOR } from "./config/constants";
@@ -9,7 +9,7 @@ import closeIcon from "./assets/close.png";
 import Sponsor from "./components/Sponsor";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { MdMailOutline } from "react-icons/md";
-import { FaLocationDot } from "react-icons/fa6";
+import { FaLocationDot, FaXTwitter  } from "react-icons/fa6";
 // import Glassmorphism from "./components/Glassmorphism";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import FloatingProjects from "./components/FloatingProjects";
@@ -226,7 +226,7 @@ function App() {
                 </div>
 
                 <div className="social-links">
-                <a href=""><FaTwitter/></a>  
+                <a href=""><FaXTwitter/></a>  
                 <a href="https://www.instagram.com/"><FaInstagram/></a>  
                 <a href="https://www.linkedin.com/company/the-yukt/"><FaLinkedin/></a>  
                 </div>
@@ -236,6 +236,10 @@ function App() {
       
       <hr className="hori-line"></hr>
       <footer>
+        <div className="foot-up">
+        <div id="logo">
+          <img src='logo.jpeg'/>
+        </div>
         <div className="left-side">
         <h3>Reach Us</h3>
                 <div className="type-fills">
@@ -251,18 +255,24 @@ function App() {
 
         <div className="mid-side">
         <h3>Company</h3>
-          <h5>About</h5>
-          <h5>Contact Us</h5>
-          <h5>Careers</h5>
+          <h4>About</h4>
+          <h4>Contact Us</h4>
+          <h4>Careers</h4>
         </div>
 
         <div className="right-side">
         <h3>Quick Links</h3>
         <a href="https://www.instagram.com/theyukt/"><FaInstagram/>Instagram</a>
           <a href="https://www.linkedin.com/company/the-yukt/"><FaLinkedin/> Linkedin</a>  
-          <a><h5>Twitter</h5></a>
+          <a href="https://www.linkedin.com/company/the-yukt/"><FaXTwitter /> Twitter</a> 
         </div>
         
+        </div>
+
+        <div className="foot-down">
+          <p>© 2025 theYukt. All Rights Reserved.</p>
+        </div>
+      
       </footer>
 
     </div>

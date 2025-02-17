@@ -577,6 +577,14 @@ footer {
   color: white;
   padding: 20px 0;
   display: flex;
+  flex-direction: column;
+}
+
+.foot-up {
+  background-color: #000000;
+  color: white;
+  padding: 20px 0;
+  display: flex;
   justify-content: space-around;
 }
 
@@ -615,4 +623,18 @@ h5{
 .send-message button{
   background-color: transparent;
   color: white;
+}
+
+#logo img{
+  height: 115px;
+  width: 130px;
+  font-size: 5px;
+}
+
+.foot-down {
+  background-color: #000000;
+  color: white;
+  padding: 5px 0;
+  display: flex;
+  justify-content: space-around;
 }
