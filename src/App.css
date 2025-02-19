@@ -1,0 +1,640 @@
+/* ----------- local fonts ----------- */
+@font-face {
+  font-family: 'Alike Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Alike Regular'), url('./fonts/Alike-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Georgia Pro Cond';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Georgia Pro Cond'), url('./fonts/GeorgiaPro-CondRegular.woff') format('woff');
+}
+
+/* ----------- local fonts end here ----------- */
+
+body {
+  background-color: black;
+  margin: 0;
+  overflow-x: hidden;
+  background-image: url('./assets/mountain.png');
+  background-repeat: no-repeat;
+  background-size:contain;
+  color: white;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+  position: relative;
+}
+
+.logo img{
+  height: 45px;
+  width: 60px;
+  font-size: 5px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.register-btn {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.nav__button {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: opacity 0.3s ease;
+}
+
+.nav__button:hover {
+  opacity: 0.8;
+}
+
+.main-content {
+  margin-top: 12%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 800px;
+}
+
+.hero-content h1{
+  margin-top: -8%;
+  font-size: 38px;
+
+  color: rgb(255, 255, 255);
+  animation: smooth-glow 5s infinite;
+  transition: opacity 0.5s ease-in-out;
+}
+@keyframes smooth-glow {
+  0% {
+    opacity: 0.8;
+    text-shadow: 0 0 10px rgb(164, 164, 169);
+  }
+  50% {
+    opacity: 1;
+    text-shadow: 0 0 20px rgb(156, 156, 165);
+  }
+  100% {
+    opacity: 0.8;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+}
+h3{
+  font-size: 18px;
+  line-height: 2rem;
+  margin-bottom: 10px;
+}
+h1 {
+  font-size: 68px;
+  line-height: 1.1;  
+}
+
+.date {
+  color: #f9f9f9;
+  margin-bottom: 28px;
+}
+
+.description {
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.hero-image {
+  flex: none;
+  width: 100%;
+  max-width: 500px;
+}
+
+.about-us{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-content{
+  margin-top: 5%;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.about-content p{
+  font-size: 25px;
+}
+
+.about-content iframe{
+  height: 300px;
+  width: 50%;
+}
+
+.expertise {
+  margin-top: 10%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.expertise-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.expertise-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 60vh;
+}
+
+/* Common Circle Styles */
+.circles {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  background-color: aliceblue;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  position: absolute;
+}
+
+/* Circle Positions */
+.circle-1 { /* UI/UX */
+  top: -25%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.circle-2 { /* Web Dev */
+  top: 37.5%;
+  margin-left: 600px;
+}
+
+.circle-3 { /* App Dev - Adjusted for Equal Spacing */
+  bottom: -25%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.circle-4 { /* Graphic Design */
+  top: 37.5%;
+  margin-left: -600px;
+  
+ 
+}
+
+/* Centered Logo */
+.mid-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  z-index: 10;
+}
+
+.mid-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Arrows */
+.circle-1::after, .circle-2::after, .circle-3::after, .circle-4::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  background-color: white;
+}
+
+/* White Circle at the End of Arrow */
+.circle-1::before, .circle-2::before, .circle-3::before, .circle-4::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+/* Top Arrow (UI/UX) */
+.circle-1::after {
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) rotate(90deg);
+}
+.circle-1::before {
+  top: calc(100% + 60px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Left Arrow (Web Dev) */
+.circle-2::after {
+  right: 90%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.circle-2::before {
+  right: calc(100% + 60px);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Bottom Arrow (App Dev - Adjusted) */
+.circle-3::after {
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) rotate(90deg);
+}
+.circle-3::before {
+  bottom: calc(100% + 60px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Right Arrow (Graphic Design) */
+.circle-4::after {
+  left: 90%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.circle-4::before {
+  left: calc(100% + 60px);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+/* Project Section */
+.projects-section{
+  margin-top: 10%;
+}
+
+/* Timeline container */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Timeline vertical line */
+.timeline:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #4CAF50;
+  transform: translateX(-50%);
+}
+
+/* Individual timeline items */
+.timeline-item {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* Left side items */
+.timeline-item:nth-child(odd) {
+  padding-right: 50%;
+  justify-content: flex-end;
+}
+
+/* Right side items */
+.timeline-item:nth-child(even) {
+  padding-left: 50%;
+  justify-content: flex-start;
+}
+
+.timeline-content {
+  width: 80%;
+  padding: 2rem;
+  margin: 0 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border: 1px solid #4CAF50;
+}
+
+.timeline-section h1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10%;
+}
+
+
+.timeline-content h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.left-timeline{
+  text-align: left;
+}
+
+.right-timeline{
+  text-align: right;
+}
+
+
+
+.timeline-content p {
+  font-size: 1rem;
+  color: #a8b2c7;
+  line-height: 1.6;
+}
+
+/* Timeline markers */
+.timeline-marker {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 4px;
+  background: #4CAF50;
+  top: 50%;
+  transform: translateY(-80%);
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: row-reverse; /* This will reverse the order */
+  gap: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  max-width: 1200px;
+  margin: 15% auto;
+  height: 70vh;
+}
+
+.b-card {
+  flex: 0 0 60%;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 20px;
+  color: black;
+}
+
+.s-card {
+  flex: 0 2 40%;
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  min-height: 300px;
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  
+}
+
+.in-s-card{
+  margin-left: 12%;
+  margin-top: 12%;
+}
+
+.in-s-card h2{
+  font-size: 2rem;
+  color: white;
+}
+
+.in-s-card h3{
+  font-size: 1rem;
+  color: #C9C9C9;
+  font-weight: 400;
+}
+
+.type-fills{
+  display: flex;
+  margin: 4%;
+  padding: 1%;
+}
+
+.type-fills h4{
+  font-weight: 400 ;
+  margin-left: 2.5%;
+}
+
+.contact-info{
+  margin-top: 15%;
+}
+
+.social-links{
+  margin-top: 18%;
+  display: flex;
+  width: 45%;
+  justify-content: space-evenly;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.input-det{
+  display: flex;
+  flex-direction: column;
+}
+
+.upper-inp{
+  display: flex;
+  justify-content: space-around;
+}
+
+.input-det input{
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid black;
+  margin-top: 10%;
+  width: 130%;
+}
+
+.input-det input:focus , textarea:focus{
+  outline: none;
+}
+
+.input-det input, textarea{
+  font-size: 1rem;
+}
+
+#upper-2{
+  margin-top: 6%;
+  margin-bottom: 6%;
+}
+
+.text-det{
+  display: flex;
+  flex-direction: column;
+}
+
+textarea{
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid black;
+  margin-top: 1%;
+  width: 180%;
+}
+
+#upper-3{
+  display: flex;
+  margin-left: 12%; 
+  width: 100%;
+  margin-top: 6%;
+  margin-bottom: 6%;
+}
+
+/* FOOTER */
+.hori-line{
+  width: 98%;
+  margin: auto;
+  border: none;          /* Remove default border */
+  height: 2px;           /* Adjust thickness as needed */
+  background: linear-gradient(
+    to right,
+    transparent,
+    #fff,              /* Center color (black in this example) */
+    transparent
+  );
+  /*width: 50%;             Adjust width as needed */
+  margin: 20px auto;
+}
+
+footer {
+  background-color: #000000;
+  color: white;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.foot-up {
+  background-color: #000000;
+  color: white;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+h5{
+  font-size: 1rem;
+  margin-left: 10%;
+  font-weight: 300;
+}
+
+.right-side{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.send-message{
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
+}
+
+/* .send-message:hover{
+  background-color: white;
+  color: black;
+} */
+
+.send-message button{
+  background-color: transparent;
+  color: white;
+}
+
+#logo img{
+  height: 115px;
+  width: 130px;
+  font-size: 5px;
+}
+
+.foot-down {
+  background-color: #000000;
+  color: white;
+  padding: 5px 0;
+  display: flex;
+  justify-content: space-around;
+}
