@@ -1,0 +1,25 @@
+{
+  "name": "theyukt",
+  "version": "1.0.0",
+  "description": "theYukt is a dynamic platform where clients can submit projects, and we take care of the entire development process by assembling a team of skilled professionals, including web developers, app developers, designers, and video editors. Our goal is to deliver complete, high-quality projects tailored to client needs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/v-aibhavbajaj2520/theYukt.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/v-aibhavbajaj2520/theYukt/issues"
+  },
+  "homepage": "https://github.com/v-aibhavbajaj2520/theYukt#readme",
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.2.0"
+  }
+}
