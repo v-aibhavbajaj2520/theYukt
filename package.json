@@ -4,8 +4,11 @@
   "description": "theYukt is a dynamic platform where clients can submit projects, and we take care of the entire development process by assembling a team of skilled professionals, including web developers, app developers, designers, and video editors. Our goal is to deliver complete, high-quality projects tailored to client needs.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "test": "react-scripts test",
+  "eject": "react-scripts eject"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/v-aibhavbajaj2520/theYukt.git"
